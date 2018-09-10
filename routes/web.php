@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/profile', function () {
+
+    $data = [
+        'name'  => 'Fedde',
+        'email'   => 'f.vangils@rocwb.nl',
+        'lorem' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto commodi dignissimos distinctio facere, ipsa magni neque nihil, odio officiis quas qui recusandae repellat rerum unde, velit vitae '
+    ];
+    return view('profile')->with($data);
+});
+
