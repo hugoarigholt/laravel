@@ -17,11 +17,12 @@ Route::get('/', function () {
 
 Route::get('/profile', function () {
 
-    $data = [
+    $profile = [
+        'interests' => ['Rugby', 'fitness', 'gamen'],
         'name'  => 'Fedde',
         'email'   => 'f.vangils@rocwb.nl',
-        'lorem' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto commodi dignissimos distinctio facere, ipsa magni neque nihil, odio officiis quas qui recusandae repellat rerum unde, velit vitae '
+        'lorem' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto commodi dignissimos distinctio facere, ipsa magni neque nihil, odio officiis quas qui recusandae repellat rerum unde, velit vitae. En mijn hobbys zijn:'
     ];
-    return view('profile')->with($data);
+    return view('profile')->with($profile);
 });
 

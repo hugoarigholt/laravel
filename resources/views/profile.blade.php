@@ -92,8 +92,12 @@
         <div id="lorem">
             <h1>About me</h1>
             <div>{{$lorem}}</div>
+            @foreach($interests as $interest)
+                {{$interest}}
+            @endforeach
         </div>
         <div id="contact">{{$email}}</div>
+
         <div class="links">
             <a href="/">Home</a>
         </div>
